@@ -1,0 +1,50 @@
+{
+  "name": "wantp/laravel-dingtalk-notification-channel",
+  "description": "Ding talk Notification Channel for laravel.",
+  "keywords": [
+    "laravel",
+    "notifications",
+    "channel",
+    "notification-channel",
+    "dingding",
+    "dingtalk"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zhang Rongwang",
+      "email": "zhangrongwang798@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "guzzlehttp/guzzle": "^6.0",
+    "illuminate/notifications": "~5.8.0|^6.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wantp\\Notifications\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wantp\\Notifications\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wantp\\Notifications\\DingTalkChannelServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
